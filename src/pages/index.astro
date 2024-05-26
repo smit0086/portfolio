@@ -1,0 +1,346 @@
+---
+import Button from "../components/button.astro";
+import Email from "../components/email.astro";
+import Linkedin from "../components/linkedin.astro";
+import Github from "../components/github.astro";
+import Image from "astro/components/Image.astro";
+import wotnot from "../images/wotnot.webp";
+import cloudConnect from "../images/cloud-connect.jpeg";
+import parkSpace from "../images/parkspace.jpeg";
+import growBiz from "../images/growbiz.jpeg";
+import Link from "../components/link.astro";
+---
+
+<html lang="en">
+    <head>
+        <!-- Google Tag Manager -->
+        <script>
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({
+                    "gtm.start": new Date().getTime(),
+                    event: "gtm.js",
+                });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != "dataLayer" ? "&l=" + l : "";
+                j.async = true;
+                j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, "script", "dataLayer", "GTM-5QHKNDKS");
+        </script>
+        <!-- End Google Tag Manager -->
+        <meta charset="utf-8" />
+        <link rel="icon" type="image/png" href="/favicon.png" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <!-- Primary Meta Tags -->
+        <title>Smit Patel | Fullstack Developer</title>
+        <meta name="title" content="Smit Patel | Fullstack Developer" />
+        <meta
+            name="description"
+            content="I'm a fullstack developer based in Halifax, I'll help you turn your product ideas to reality."
+        />
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <!-- <meta property="og:url" content="https://metatags.io/" /> -->
+        <meta property="og:title" content="Smit Patel | Fullstack Developer" />
+        <meta
+            property="og:description"
+            content="I'm a fullstack developer based in Halifax, I'll help you turn your product ideas to reality."
+        />
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image" />
+        <!-- <meta property="twitter:url" content="https://metatags.io/" /> -->
+        <meta
+            property="twitter:title"
+            content="Smit Patel | Fullstack Developer"
+        />
+        <meta
+            property="twitter:description"
+            content="I'm a fullstack developer based in Halifax, I'll help you turn your product ideas to reality."
+        />
+
+        <!-- Meta Tags Generated with https://metatags.io -->
+
+        <title>Smit Patel | Fullstack Developer</title>
+    </head>
+    <body>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript
+            ><iframe
+                src="https://www.googletagmanager.com/ns.html?id=GTM-5QHKNDKS"
+                height="0"
+                width="0"
+                style="display:none;visibility:hidden"></iframe></noscript
+        >
+        <!-- End Google Tag Manager (noscript) -->
+        <div class="container mx-auto px-4 py-4">
+            <!-- Header -->
+            <div class="font-semibold fixed top-0 pt-4 pb-2 bg-white w-full">
+                <span class="text-2xl">S</span><span class="text-xl">MIT</span
+                ><span class="text-2xl text-purple">.</span>
+            </div>
+
+            <!-- Hero -->
+            <div class="pt-20 pb-8 md:py-40">
+                <h1 class="text-2xl text-grey">Hi, I'm Smit 👋🏻</h1>
+                <h2 class="text-4xl lg:text-8xl font-bold">
+                    <span class="text-purple">Full</span>stack <br />
+
+                    Developer
+                </h2>
+
+                <p class="my-2 lg:text-2xl text-grey">
+                    I'm a fullstack developer based in Halifax, I'll help you
+                    turn your product ideas to reality.
+                </p>
+                <Button
+                    customClass="my-1"
+                    title="Get in touch"
+                    link="#contact"
+                />
+            </div>
+
+            <!-- Projects -->
+            <div class="py-2 md:py-16">
+                <h3 class="text-4xl md:text-6xl font-semibold">
+                    Projects<span class="text-purple">.</span>
+                </h3>
+                <div class="my-10">
+                    <div class="p-4 h-96 bg-light-grey rounded-3xl">
+                        <Image
+                            src={wotnot}
+                            alt="WotNot"
+                            class="w-full h-full object-cover rounded-3xl m-auto"
+                        />
+                    </div>
+                    <div class="py-2">
+                        <h4 class="text-xl md:text-2xll font-bold">
+                            WotNot <a
+                                target="_blank"
+                                aria-label="Link to wotnot"
+                                href="https://wotnot.io/"
+                                ><Link class="inline text-purple" /></a>
+                        </h4>
+                        <p class="md:text-xl">
+                            No code drag-and-drop bot builder
+                        </p>
+                    </div>
+                </div>
+                <div class="my-10 md:columns-2">
+                    <div>
+                        <div class="p-4 h-96 bg-light-grey rounded-3xl">
+                            <Image
+                                src={cloudConnect}
+                                alt="Cloud Connect Chat Application"
+                                class="w-full h-full object-cover rounded-3xl m-auto"
+                            />
+                        </div>
+                        <div class="py-2">
+                            <h4 class="text-xl md:text-2xl font-bold">
+                                Cloud Connect Chat Application <a
+                                    target="_blank"
+                                    aria-label="Link to Cloud Connect Chat Application"
+                                    href="https://github.com/smit0086/CloudConnectChatApp"
+                                    ><Link class="inline text-purple" /></a
+                                >
+                            </h4>
+                            <p class="md:text-xl">
+                                Live chat application using AWS serverless
+                                technology.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="my-10">
+                        <div class="p-4 h-96 bg-light-grey rounded-3xl">
+                            <Image
+                                src={parkSpace}
+                                alt="ParkSpace Mobile Application"
+                                class="w-auto h-full object-fit rounded-3xl m-auto"
+                            />
+                        </div>
+                        <div class="py-2">
+                            <h4 class="text-xl md:text-2xl font-bold">
+                                ParkSpace Mobile Application <a
+                                    target="_blank"
+                                    aria-label="Link to ParkSpace Mobile Application"
+                                    href="https://github.com/smit0086/ParkspaceAndroidApp"
+                                    ><Link class="inline text-purple" /></a
+                                >
+                            </h4>
+                            <p class="md:text-xl">
+                                Native Android application for finding parking
+                                spaces.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="p-4 h-96 bg-light-grey rounded-3xl">
+                        <Image
+                            src={growBiz}
+                            alt="GrowBiz Service Marketplace"
+                            class="w-full h-full object-cover rounded-3xl m-auto"
+                        />
+                    </div>
+                    <div class="py-2">
+                        <h4 class="text-xl md:text-2xl font-bold">
+                            GrowBiz Service Marketplace <a
+                                target="_blank"
+                                aria-label="Link to GrowBiz Service Marketplace"
+                                href="https://github.com/smit0086/GrowbBizServiceMarketplace"
+                                ><Link class="inline text-purple" /></a
+                            >
+                        </h4>
+                        <p class="md:text-xl">
+                            Platform for businesses to manage and advertise
+                            services.
+                        </p>
+                    </div>
+                </div>
+                <!-- <div class="my-10">
+                    
+                </div> -->
+            </div>
+            <div class="py-2 md:py-16">
+                <h3 class="text-4xl md:text-6xl font-semibold">
+                    Experience<span class="text-purple">.</span>
+                </h3>
+                <div class="mt-6">
+                    <div class="text-2xl font-medium">
+                        Software Engineer II <span class="text-purple"
+                            >@ Maruti Techlabs</span
+                        >
+                    </div>
+                    <div class="text-grey text-sm font-medium">
+                        January 2023 -- July 2023
+                    </div>
+                    <ul class="list-disc md:text-lg">
+                        <div class="mx-8">
+                            <li>
+                                Redesigned CI/CD pipeline by separating the
+                                frontend and backend, improving build times by
+                                45%.
+                            </li>
+                            <li>
+                                Improved application load times from 15s to 8s
+                                by redesigning frontend architecture and
+                                introducing web technologies like IndexedDB and
+                                Browser cache.
+                            </li>
+                            <li>
+                                Managed and Mentored 4 junior developers on
+                                React best practices, design pattern, and custom
+                                hooks.
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+                <div class="mt-6">
+                    <div class="text-2xl font-medium">
+                        Software Engineer I <span class="text-purple"
+                            >@ Maruti Techlabs</span
+                        >
+                    </div>
+                    <div class="text-grey text-sm font-medium">
+                        May 2021 -- December 2022
+                    </div>
+                    <ul class="list-disc md:text-lg">
+                        <div class="mx-8">
+                            <li>
+                                Delivered updates every two weeks following
+                                Agile methodologies and collaborating with team
+                                of 28 engineers.
+                            </li>
+                            <li>
+                                Streamlined development process by creating
+                                reusable UI components using Material UI, Styled
+                                Component, SCSS, and Storybook improving
+                                developer productivity by 50%.
+                            </li>
+                            <li>
+                                Improved system performance and maintainability
+                                by performing code refactoring, removing over
+                                20,000 lines of redundant code, resulting
+                                decrease in cognitive complexity from 21 to 14.
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+                <div class="mt-6">
+                    <div class="text-2xl font-medium">
+                        Software Engineer Intern <span class="text-purple"
+                            >@ Maruti Techlabs</span
+                        >
+                    </div>
+                    <div class="text-grey text-sm font-medium">
+                        January 2021 -- April 2021
+                    </div>
+                    <ul class="list-disc md:text-lg">
+                        <div class="mx-8">
+                            <li>
+                                Modernised product website by migrating existing
+                                WordPress website to Gatsby, resulting increase
+                                in Lighthouse score from 70 to 95+ and GTMetrix
+                                score from C to A+.
+                            </li>
+                            <li>
+                                Introduced marketing strategies like A/B testing
+                                using Google Tag Manager and Metrics tracking
+                                using Google Analytics, improving SEO
+                                performance by 25%.
+                            </li>
+                            <li>
+                                Expanded user accessibility by adding support
+                                for major web browsers (Chrome, Firefox, Safari,
+                                IE11), covering over 90% of global internet
+                                users.
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="py-2 md:py-16" id="contact">
+                <h3 class="text-4xl md:text-6xl font-semibold">
+                    Get in touch <span class="text-purple">! </span>
+                </h3>
+                <div class="mt-6">
+                    <div
+                        class="flex items-center justify-between flex-col lg:flex-row"
+                    >
+                        <div>
+                            <a
+                                href="mailto:smit.patel@dal.ca"
+                                class="flex items-center text-xl"
+                                ><Email
+                                    class="text-4xl mr-2"
+                                />smit.patel@dal.ca</a
+                            >
+                        </div>
+                        <div class="flex text-4xl text-grey">
+                            <a
+                                target="_blank"
+                                aria-label="Link to Linkedin"
+                                href="https://www.linkedin.com/in/smit0086/"
+                                class="mr-2"
+                            >
+                                <Linkedin />
+                            </a>
+                            <a
+                                target="_blank"
+                                aria-label="Link to Github"
+                                href="https://github.com/smit0086"
+                            >
+                                <Github />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

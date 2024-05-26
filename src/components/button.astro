@@ -1,0 +1,8 @@
+---
+
+const { title, link, customClass } = Astro.props;
+
+---
+
+<a class={`p-3 bg-purple text-white rounded-lg font-medium inline-block ${customClass}`} href={link} >{title}</a>
+
